@@ -15,7 +15,7 @@ module RotateSRV
           next
         end
         begin
-          response = Cossack.get("https://use.gameapis.net/mc/extra/blockedservers/check/#{domain.downcase}")
+          response = Cossack.get("https://use.gameapis.io/mc/extra/blockedservers/check/#{domain.downcase}")
         rescue ex
           puts "Error when contacting GameAPIs to update it's database. (#{ex.message})"
           return false
@@ -39,7 +39,7 @@ module RotateSRV
           next
         end
         begin
-          response = Cossack.get("https://use.gameapis.net/mc/extra/blockedservers/check/#{domain.downcase}")
+          response = Cossack.get("https://use.gameapis.io/mc/extra/blockedservers/check/#{domain.downcase}")
         rescue ex
           puts "Error when contacting GameAPIs for checking if a domain is blacklisted. (#{ex.message})"
           return false
@@ -80,7 +80,7 @@ module RotateSRV
       remake = ""
       puts "#{RotateSRV::Colours.green}## Checking if current target is blacklisted. ###{RotateSRV::Colours.reset}"
       begin
-        current_response = Cossack.get("https://use.gameapis.net/mc/extra/blockedservers/check/#{current[0].downcase}")
+        current_response = Cossack.get("https://use.gameapis.io/mc/extra/blockedservers/check/#{current[0].downcase}")
       rescue ex
         puts "Error when contacting GameAPIs for checking if a domain is blacklisted. (#{ex.message})"
         return false
