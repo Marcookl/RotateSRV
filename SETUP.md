@@ -12,15 +12,15 @@ https://gist.github.com/derhuerst/1b15ff4652a867391f03#file-linux-md
 You may need to install either `openssl-dev` or `libssl-dev`.
 
 ```
-$ git clone https://github.com/Yive/RotateSRV
+$ git clone https://github.com/Marcookl/RotateSRV.git
 $ cd RotateSRV
 $ shards install
 $ crystal build ./src/RotateSRV.cr
 ```
-- Note: If `git clone https://github.com/Yive/RotateSRV` errors out, try `git clone git://github.com/Yive/RotateSRV`
+- Note: If `git clone https://github.com/Marcookl/RotateSRV.git` errors out, try `git clone git://github.com/Marcookl/RotateSRV`
 
 ### Pre-compiled builds
-https://github.com/Yive/RotateSRV/releases
+https://github.com/Marcookl/RotateSRV/releases
 
 ### Usage
 ```
